@@ -1,0 +1,13 @@
+{% extends 'board/base.html' %}
+
+{% block content %}
+<div class="columns">
+    {% for column in columns %}
+    <p class="column">{{column}}</p>
+    <p class="column"><input></input>
+        <button type="submit" >Добавить колонку</button>
+    </p>
+
+    {% endfor %}
+</div>
+{% endblock %}
